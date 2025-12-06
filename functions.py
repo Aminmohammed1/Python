@@ -14,6 +14,12 @@ def get_greeting(name):
 
 message = get_greeting("amin")
 
-file = open("greet.txt", "w")
-file.write(message)
-file.close
+# file = open("greet.txt", "w")
+# file.write(message)
+# file.close
+
+
+def increment(by, number):
+    return number+by
+
+print(increment(number=5, by=2))
