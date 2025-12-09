@@ -38,3 +38,31 @@ print(sett)
 
 
 #hash map
+myMap = {}
+myMap["apple"] = 10
+myMap["banana"] = 20
+ 
+print(myMap)
+print(len(myMap))
+
+print("apple" in myMap)
+myMap.pop("apple")
+print("apple" in myMap)
+ 
+myMap = {"alice": 90, "bob": 45}
+print(myMap)
+
+# Dict comprehension...
+myMap = {i:i*2 for i in range(3)}
+print(myMap)
+
+# looping through a map..
+myMap = {"alice":90, "bob": 45}
+for key in myMap:
+    print(key, myMap[key])
+
+for value in myMap.values():
+    print(value)
+
+for key, value in myMap.items():
+    print(key, value)    
